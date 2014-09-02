@@ -1,6 +1,9 @@
 <?php
 class Aki {
-    private $watt = 5;
+    private $watt;
+    public function __construct($watt = 5) {
+        $this->watt = $watt;
+    }
     public function cekDaya() {
         return $this->watt;
     }
